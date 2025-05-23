@@ -14,11 +14,9 @@ The pipeline performs the following steps:
 6. Alignment to a reference genome using STAR  
 7. Quantification using featureCounts
 
-The script prompts you step-by-step and allows full control over trimming and analysis parameters.
-
 ## Requirements
 
-Install the following tools before running the script:
+The following tools must be installed before running the script:
 
 - FastQC: https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 - Trimmomatic: http://www.usadellab.org/cms/?page=trimmomatic
