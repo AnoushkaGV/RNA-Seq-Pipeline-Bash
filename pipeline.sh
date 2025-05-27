@@ -112,7 +112,7 @@ java -jar trimmomatic-0.36.jar PE -threads $thread -phred33 \
 "$PROJECTS_DIR/$varname/output/trimmed/$sample/o${sample}_R1_unpaired.fastq.gz" \
 "$PROJECTS_DIR/$varname/output/trimmed/$sample/o${sample}_R2_paired.fastq.gz" \
 "$PROJECTS_DIR/$varname/output/trimmed/$sample/o${sample}_R2_unpaired.fastq.gz" \
-ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:keepBothReads \
+ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:keepBothReads \
 LEADING:$leading TRAILING:$trailing HEADCROP:$hc MINLEN:$ml;
 	done < "$input"
 	echo
