@@ -59,13 +59,6 @@ Also required:
 
 ## Setup
 
-### Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/rna-seq-pipeline.git
-cd rna-seq-pipeline
-```
-
 ### Configure Paths in `pipeline.sh`
 
 Open `pipeline.sh` and set the following variables:
@@ -126,3 +119,5 @@ Adapter trimming setting for paired-end Illumina reads using Trimmomatic, allowi
 
 - Ensure adapter file is present or provide full path in the script
 - Modify `gunzip` usage if disk space is limited
+
+Note: This pipeline was originally developed as part of my undergraduate research internship at IIT Guwahati in 2022.
