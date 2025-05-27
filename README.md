@@ -120,4 +120,4 @@ Adapter trimming setting for paired-end Illumina reads using Trimmomatic, allowi
 - Ensure adapter file is present or provide full path in the script
 - Modify `gunzip` usage if disk space is limited
 
-Note: This pipeline was originally developed as part of my undergraduate research internship at IIT Guwahati in 2022.
+Note: Updated and refined pipeline which was originally developed as part of my undergraduate research internship at IIT Guwahati in 2022.
