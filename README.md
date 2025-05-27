@@ -117,19 +117,10 @@ output/counts/SRR123456.txt
 This pipeline uses the following Trimmomatic setting, optimized for Illumina TruSeq adapters:
 
 ```bash
-ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:2:keepBothReads
+ILLUMINACLIP:TruSeq3-PE.fa:2:30:10:keepBothReads
 ```
 
-Explanation of parameters:
-- `2`: Maximum mismatches allowed in the seed
-- `30`: Palindrome mode clip threshold (for adapter dimer detection)
-- `10`: Simple clip threshold (for standard adapter matches)
-- `2`: Minimum adapter length to keep
-- `keepBothReads`: Retains both reads even if only one is trimmed
-
-These values were chosen to balance strict adapter removal with retention of high-quality paired reads for downstream alignment.
-
-If your data used Nextera or NEB adapters, replace `TruSeq3-PE.fa` with the appropriate adapter file.
+Adapter trimming setting for paired-end Illumina reads using Trimmomatic, allowing 2 seed mismatches, with clip thresholds of 30 (palindrome) and 10 (simple clip) and retaining both reads.
 
 ## Troubleshooting
 
